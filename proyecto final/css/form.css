@@ -1,0 +1,56 @@
+.container-form {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  margin: 30px 15px;
+}
+.container-form span {
+  text-transform: unset;
+  font-size: 10px;
+  font-style: oblique;
+}
+.container-form h3 {
+  margin-bottom: 20px;
+}
+
+button {
+  height: 50px;
+  width: 150px;
+  margin: 15px 0 15px;
+  background-color: #000;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+}
+button:hover {
+  color: #F9C846;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.icon-mail .fa-envelope-o {
+  width: 40px;
+  height: 40px;
+  font-size: 1.8rem;
+  margin: 0 auto;
+}
+
+input {
+  border-radius: 5px;
+  padding-left: 15px;
+  outline: none;
+  width: 300px;
+  height: 50px;
+}
+
+/*# sourceMappingURL=form.css.map */

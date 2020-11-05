@@ -1,0 +1,167 @@
+@import "general";
+@import "cards";
+@import "footer";
+@import "form";
+@import "portfolio";
+
+$color_primary: #F9C846;
+$color_secundary: black;
+$bg-color: white;
+
+// header 
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $color_secundary;
+
+  h1 {
+    color: $bg-color;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+
+    span {
+      color: $color_primary;
+      text-decoration: none;
+      font-weight: 700;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 950px;
+
+  .navbar-toggler {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    outline: none;
+    margin: 0 auto;
+
+    &:hover {
+      color: $color_primary;
+    }
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inicio {
+  width: 100%;
+  height: 95vh;
+  background-image: url(../images/slider.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 800px;
+  margin-left: 30px;
+
+  h1 {
+    font-size: 5rem;
+    line-height: 5.4rem;
+    padding: 0 15px;
+    text-shadow: 0px 3px 3px #000000;
+
+    @media only screen and (max-width: 700px) {
+      font-size: 3.1rem;
+      text-align: center;
+      line-height: 3.4rem;
+    }
+
+    span {
+      color: $bg-color;
+    }
+  }
+
+  p {
+    color: $bg-color;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+
+    @media only screen and (max-width: 700px) {
+      text-align: center;
+    }
+  }
+
+  .container-main-more {
+    border: 2px solid $color_primary;
+    font-size: 1.2rem;
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    padding-top: 3px;
+    @media only screen and (max-width: 700px) {
+      margin: 15px auto;
+    }
+  }
+}
+
+.container-main {
+  height: 300px;
+  width: 80%;
+  text-align: left;
+
+  a {
+    text-align: center;
+  }
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+
+.container-me {
+  background-color: white;
+  color: #434343;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 40px;
+}
+
+.col-md-6 {
+  img {
+    max-width: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 5px 10px 0;
+  }
+
+  p {
+    margin: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+  }
+}
